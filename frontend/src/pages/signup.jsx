@@ -30,7 +30,7 @@ export function Signup(){
                 <Inputbox onchange={(e)=>{
                     setPassword(e.target.value)
                 }} tittle={"Password"} type={"password"} ></Inputbox>
-                <Button onclick={async ()=>{const response= await axios.post("http://localhost:3000/api/v1/user/signup",{
+                <Button onclick={async ()=>{const response= await axios.post("https://semi-functional-payment-application-1.onrender.com/api/v1/user/signup",{
                     firstname:firstname,
                     lastname:lastname,
                     username:email,
