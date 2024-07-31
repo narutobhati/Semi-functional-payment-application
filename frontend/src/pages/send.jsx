@@ -22,7 +22,7 @@ export function Sendmoney(){
                         setAmount(e.target.value)
                     }} tittle={"Amount (in Rs)"} placeholder={"Enter Amount"} type={"number"}></Inputbox>
                     <Button onclick={()=>{
-                        axios.post("http://localhost:3000/api/v1/account/transfer",{
+                        axios.post("https://semi-functional-payment-application-1.onrender.com/api/v1/account/transfer",{
                             to:id,
                             amount:amount
                         },{

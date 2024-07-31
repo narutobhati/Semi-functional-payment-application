@@ -6,7 +6,7 @@ export function User(){
     const [user,setUser]=useState([{firstname:"sanchay",lastname:"awana"}])
     const [filter,setFilter]=useState("")
     useEffect( ()=>{
-        axios.get("http://localhost:3000/api/v1/user/bulk?filter="+filter).then((response)=>{
+        axios.get("https://semi-functional-payment-application-1.onrender.com/api/v1/user/bulk?filter="+filter).then((response)=>{
             setUser(response.data.user)
         }
        
