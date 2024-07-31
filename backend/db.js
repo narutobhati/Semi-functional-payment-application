@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 const { number } = require("zod");
-mongoose.connect("mongodb+srv://admin:sanchay999@cluster0.f4yqzqa.mongodb.net/paytm")
+mongoose.connect("mongodb+srv://admin:sanchay999@cluster0.f4yqzqa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 const userSchema=new mongoose.Schema({
     username:{
         type:String,
