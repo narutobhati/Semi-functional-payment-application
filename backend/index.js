@@ -4,7 +4,7 @@ const cors=require("cors")
 const app=express();
 
 const corsOptions = {
-    origin: 'https://semi-functional-payment-application-7z3xe1xcy.vercel.app', 
+    origin: '', 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
@@ -17,4 +17,4 @@ app.use("/api/v1",Mainrouter)
 
 
 
-app.listen(3000)
+app.listen(4000)
