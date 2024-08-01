@@ -1,12 +1,12 @@
 const express=require("express")
 const router=express.Router()
 const {User, Account}=require("../db")
-
+const cors=require("cors")
 const jwt=require("jsonwebtoken")
 const Jwt_secret=require("../config")
 const zod=require("zod")
 const authentication=require('../middelware')
-
+router.use(cors());
 
 const signupBody = zod.object({
     username: zod.string().email(),
