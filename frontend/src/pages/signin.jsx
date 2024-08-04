@@ -27,9 +27,9 @@ export function Signin(){
                     password:password
                 })
                     localStorage.setItem("token",response.data.token)
-                    {if(response.data.flag===true)
+                 
                         navigate('/dashboard')
-                    }
+                    
                 }
                 } title={"Sign in"}  ></Button>
                 <Bottomwarning content={"Don't have an Account?"} todo={"Sign up"} address={"https://semi-functional-payment-application-7z3xe1xcy.vercel.app/signup"}></Bottomwarning>
