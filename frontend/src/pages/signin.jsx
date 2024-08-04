@@ -12,7 +12,7 @@ export function Signin(){
                 <Inputbox tittle={"Email"} placeholder={"xyz@email.com"} type={"email"}></Inputbox>
                 <Inputbox tittle={"Password"} type={"password"}></Inputbox>
                 <Button title={"Sign in"} ></Button>
-                <Bottomwarning content={"Don't have an Account?"} todo={"Sign up"} address={"https://semi-functional-payment-application-7z3xe1xcy.vercel.app//signup"}></Bottomwarning>
+                <Bottomwarning content={"Don't have an Account?"} todo={"Sign up"} address={"https://semi-functional-payment-application-a4y1.vercel.app//signup"}></Bottomwarning>
             </div>
     </div>
     </div>
